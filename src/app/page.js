@@ -99,37 +99,59 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Amazon Baby Registry Section */}
+      <section className="w-full max-w-4xl text-center bg-white p-6 rounded-lg shadow-lg mb-10">
+        <h2 className="text-4xl font-bold mb-4 text-pink-600 font-pacifico">
+          Our Amazon Baby Registry
+        </h2>
+        <p className="text-lg text-gray-700 mb-6">
+          We appreciate your love and support! If you would like to gift us
+          something special, please visit our Amazon Baby Registry.
+        </p>
+        <a
+          href="https://www.amazon.com/baby-reg/gianna-traver-november-2024-melbourne/3KC6MNIMVBDWF?ref_=cm_sw_r_cp_ud_dp_E0VAT6XXHJ7Q2PJBTM1E"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-pink-600 text-white p-3 rounded-lg hover:bg-pink-700 transition-colors"
+        >
+          Visit Our Registry
+        </a>
+      </section>
+
       {/* RSVP Section */}
-      <section className="w-full max-w-lg text-center bg-white p-6 rounded-lg shadow-lg">
+      <section className="w-full max-w-4xl text-center bg-white p-6 rounded-lg shadow-lg">
         <h2 className="text-4xl font-bold mb-4 text-pink-600 font-pacifico">
           RSVP to Our Baby Showers
         </h2>
-        <FontAwesomeIcon
-          icon={faBabyCarriage}
-          size="2x"
-          className="text-pink-400 mb-4"
-        />
-        <p className="text-lg text-gray-700 mb-6">
-          We are excited to celebrate with you at one of our two baby showers!
-          Please let us know which one you will be attending:
-        </p>
-        <div className="text-left mb-6">
-          <h3 className="text-2xl font-bold text-pink-600 mb-2">
-            Florida Baby Shower
-          </h3>
-          <p className="text-gray-700">
-            <strong>Date:</strong> [Date] <br />
-            <strong>Location:</strong> [Venue], Florida
-          </p>
-        </div>
-        <div className="text-left mb-6">
-          <h3 className="text-2xl font-bold text-pink-600 mb-2">
-            New York Baby Shower
-          </h3>
-          <p className="text-gray-700">
-            <strong>Date:</strong> [Date] <br />
-            <strong>Location:</strong> [Venue], New York
-          </p>
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <FontAwesomeIcon
+            icon={faBabyCarriage}
+            className="text-pink-400 text-5xl mb-4 md:mb-0"
+          />
+          <div className="md:ml-6 w-full">
+            <p className="text-lg text-gray-700 mb-6">
+              We are excited to celebrate with you at one of our two baby
+              showers! Please let us know which one you will be attending:
+            </p>
+            <div className="text-left mb-6">
+              <h3 className="text-2xl font-bold text-pink-600 mb-2">
+                Florida Baby Shower
+              </h3>
+              <p className="text-gray-700">
+                <strong>Date:</strong> [Date] <br />
+                <strong>Location:</strong> [Venue], Florida
+              </p>
+            </div>
+            <div className="text-left mb-6">
+              <h3 className="text-2xl font-bold text-pink-600 mb-2">
+                New York Baby Shower
+              </h3>
+              <p className="text-gray-700">
+                <strong>Date:</strong> [Date] <br />
+                <strong>Location:</strong> [Venue], New York
+              </p>
+            </div>
+          </div>
         </div>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSeHaEjqkHXDX9NVkdO1fxPyoav8SGEuSeRdNpBgsxR1ctoulA/viewform?embedded=true"
@@ -137,12 +159,12 @@ export default function Home() {
           marginHeight="0"
           marginWidth="0"
           width="100%"
-          height="800px"
+          height="1000px"
+          className="rounded-lg"
         >
           Loading…
         </iframe>
       </section>
     </main>
-    // Force Deoploy
   );
 }
