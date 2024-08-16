@@ -1,33 +1,110 @@
+/* Import custom font */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* Basic Body Styling */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #fff1f2; /* Equivalent to bg-pink-50 */
+  color: #4a5568; /* Equivalent to text-gray-700 */
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Global Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pacifico", cursive;
+  color: #d53f8c; /* Equivalent to text-pink-600 */
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 3rem; /* Equivalent to text-5xl */
+}
+
+h2 {
+  font-size: 2.25rem; /* Equivalent to text-3xl */
+}
+
+h3 {
+  font-size: 1.875rem; /* Equivalent to text-2xl */
+}
+
+p {
+  margin-bottom: 1rem; /* Equivalent to mb-4 */
+  line-height: 1.625; /* Equivalent to leading-relaxed */
+}
+
+/* Links */
+a {
+  color: #d53f8c; /* Equivalent to text-pink-600 */
+  text-decoration: underline;
+}
+
+/* Forms */
+input,
+textarea {
+  border-width: 2px; /* Equivalent to border-2 */
+  border-color: #fed7e2; /* Equivalent to border-pink-200 */
+  border-radius: 0.5rem; /* Equivalent to rounded-lg */
+  padding: 0.75rem; /* Equivalent to p-3 */
+  width: 100%; /* Equivalent to w-full */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #f687b3; /* Equivalent to focus:border-pink-400 */
+  outline: none; /* Equivalent to focus:outline-none */
+}
+
+/* Button */
+button {
+  background-color: #d53f8c; /* Equivalent to bg-pink-600 */
+  color: #ffffff; /* Equivalent to text-white */
+  padding: 0.5rem; /* Equivalent to p-2 */
+  border-radius: 0.5rem; /* Equivalent to rounded-lg */
+  display: flex; /* Equivalent to flex */
+  align-items: center; /* Equivalent to items-center */
+  justify-content: center; /* Equivalent to justify-center */
+  font-size: 0.875rem; /* Equivalent to text-sm */
+}
+
+button:hover {
+  background-color: #b83280; /* Equivalent to hover:bg-pink-700 */
+}
+
+button svg {
+  color: #ffffff; /* Equivalent to text-white */
+}
+
+/* Hide Scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+/* Animation for the image scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  width: 200%; /* Double the width to accommodate seamless scrolling */
+  animation: scroll 40s linear infinite;
 }
