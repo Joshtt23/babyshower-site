@@ -138,8 +138,8 @@ export default function Home() {
                 Florida Baby Shower
               </h3>
               <p className="text-gray-700">
-                <strong>Date:</strong> [Date] <br />
-                <strong>Location:</strong> [Venue], Florida
+                <strong>Date:</strong> October 13, 2024 <br />
+                <strong>Location:</strong> Pineda Inn Melbourne, Florida 32940
               </p>
             </div>
             <div className="text-left mb-6">
@@ -147,8 +147,8 @@ export default function Home() {
                 New York Baby Shower
               </h3>
               <p className="text-gray-700">
-                <strong>Date:</strong> [Date] <br />
-                <strong>Location:</strong> [Venue], New York
+                <strong>Date:</strong> T.B.D <br />
+                <strong>Location:</strong> T.B.D., New York
               </p>
             </div>
           </div>
