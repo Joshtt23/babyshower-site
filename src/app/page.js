@@ -121,7 +121,7 @@ export default function Home() {
       {/* RSVP Section */}
       <section className="w-full max-w-4xl text-center bg-white p-6 rounded-lg shadow-lg">
         <h2 className="text-4xl font-bold mb-4 text-pink-600 font-pacifico">
-          RSVP to Our Baby Showers
+          RSVP to Our Baby Shower
         </h2>
         <div className="flex flex-col md:flex-row items-center justify-between">
           <FontAwesomeIcon
@@ -130,27 +130,27 @@ export default function Home() {
           />
           <div className="md:ml-6 w-full">
             <p className="text-lg text-gray-700 mb-6">
-              We are excited to celebrate with you at one of our two baby
-              showers! Please let us know which one you will be attending:
+              We are excited to celebrate with you! Please let us know if you
+              will be attending:
             </p>
             <div className="text-left mb-6">
               <h3 className="text-2xl font-bold text-pink-600 mb-2">
                 Florida Baby Shower
               </h3>
               <p className="text-gray-700">
-                <strong>Date:</strong> October 13, 2024 <br />
-                <strong>Location:</strong> Pineda Inn Melbourne, Florida 32940
+                <strong>Date:</strong> October 14, 2024 @ 3:00 P.M. <br />
+                <strong>Location:</strong> Marker 99 Melbourne, Florida 32940
               </p>
             </div>
-            <div className="text-left mb-6">
+            {/* <div className="text-left mb-6">
               <h3 className="text-2xl font-bold text-pink-600 mb-2">
-                New York Baby Shower
+                New York&pos;s Meet The Baby
               </h3>
               <p className="text-gray-700">
                 <strong>Date:</strong> T.B.D <br />
                 <strong>Location:</strong> T.B.D., New York
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
         <iframe
